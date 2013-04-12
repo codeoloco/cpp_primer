@@ -1,15 +1,16 @@
 CPP=g++
 CFLAGS=-Wall -g
 PROGS=forloop num_test express formore bigstep forstr1 plus_one block \
-      forstr2 equal compstr1 compstr2 while waiting dowhile textin1
+      forstr2 equal compstr1 compstr2 while waiting dowhile textin1 \
+      textin2 textin3 textin4 nested
 MACDIRS=forloop.dSYM num_test.dSYM express.dSYM formore.dSYM bigstep.dSYM \
 	forstr1.dSYM plus_one.dSYM block.dSYM forstr2.dSYM equal.dSYM \
 	compstr1.dSYM compstr2.dSYM while.dSYM waiting.dSYM dowhile.dSYM \
-	textin1.dSYM
+	textin1.dSYM textin2.dDYM textin3.dSYM textin4.dSYM nested.dSYM
 WINFILES=forloop.exe num_test.exe express.exe formore.exe bigstep.exe \
 	 forstr1.exe plus_one.exe block.exe forstr2.exe equal.exe \
 	 compstr1.exe comsptr2.exe while.exe waiting.exe dowhile.exe \
-	 textin1.exe
+	 textin1.exe textin2.exe textin3.exe textin4.exe nested.exe
 
 forloop : forloop.cpp
 	$(CPP) $(CFLAGS) forloop.cpp -o forloop
@@ -58,6 +59,18 @@ dowhile : dowhile.cpp
 
 textin1 : textin1.cpp
 	$(CPP) $(CFLAGS) textin1.cpp -o textin1
+
+textin2 : textin2.cpp
+	$(CPP) $(CFLAGS) textin2.cpp -o textin2
+
+textin3 : textin3.cpp
+	$(CPP) $(CFLAGS) textin3.cpp -o textin3
+
+textin4 : textin4.cpp
+	$(CPP) $(CFLAGS) textin4.cpp -o textin4
+
+nested : nested.cpp
+	$(CPP) $(CFLAGS) nested.cpp -o nested
 
 all : $(PROGS)
 
