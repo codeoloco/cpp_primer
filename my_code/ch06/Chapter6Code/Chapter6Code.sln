@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "if", "if\if.vcxproj", "{0BFE556E-F613-45AA-AEF8-F07B32CEEAE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ifelse", "ifelse\ifelse.vcxproj", "{2274FE73-F89A-4570-8FF8-5C04F9ECADF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BFE556E-F613-45AA-AEF8-F07B32CEEAE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0BFE556E-F613-45AA-AEF8-F07B32CEEAE6}.Debug|Win32.Build.0 = Debug|Win32
+		{0BFE556E-F613-45AA-AEF8-F07B32CEEAE6}.Release|Win32.ActiveCfg = Release|Win32
+		{0BFE556E-F613-45AA-AEF8-F07B32CEEAE6}.Release|Win32.Build.0 = Release|Win32
+		{2274FE73-F89A-4570-8FF8-5C04F9ECADF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2274FE73-F89A-4570-8FF8-5C04F9ECADF2}.Debug|Win32.Build.0 = Debug|Win32
+		{2274FE73-F89A-4570-8FF8-5C04F9ECADF2}.Release|Win32.ActiveCfg = Release|Win32
+		{2274FE73-F89A-4570-8FF8-5C04F9ECADF2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
