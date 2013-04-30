@@ -1,8 +1,10 @@
 CPP=g++
 CFLAGS=-Wall -g
-PROGS=ex01 ex02 ex03 ex04 ex05 ex06
-MACDIRS=ex01.dSYM ex02.dSYM ex03.dSYM ex04.dSYM ex05.dSYM ex06.dSYM
-WINFILES=ex01.exe ex02.exe ex03.exe ex04.exe ex05.exe ex06.exe
+PROGS=ex01 ex02 ex03 ex04 ex05 ex06 ex07 ex08 ex09
+MACDIRS=ex01.dSYM ex02.dSYM ex03.dSYM ex04.dSYM ex05.dSYM ex06.dSYM ex07.dSYM \
+    ex08.dSYM ex09.dSYM
+WINFILES=ex01.exe ex02.exe ex03.exe ex04.exe ex05.exe ex06.exe ex07.exe \
+    ex08.exe ex09.exe
 
 ex01 : ex01.cpp
 	$(CPP) $(CFLAGS) ex01.cpp -o ex01
@@ -21,6 +23,15 @@ ex05 : ex05.cpp
 
 ex06 : ex06.cpp
 	$(CPP) $(CFLAGS) ex06.cpp -o ex06
+
+ex07 : ex07.cpp
+	$(CPP) $(CFLAGS) ex07.cpp -o ex07
+
+ex08 : ex08.cpp
+	$(CPP) $(CFLAGS) ex08.cpp -o ex08
+
+ex09 : ex09.cpp
+	$(CPP) $(CFLAGS) ex09.cpp -o ex09
 
 all : $(PROGS)
 
