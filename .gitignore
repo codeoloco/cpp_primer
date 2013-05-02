@@ -127,3 +127,5 @@ UpgradeLog*.XML
 
 /exercises/ch05/ex02/exercise2/build/
 /exercises/ch05/ex02/exercise2/dist/
+/exercises/ch06/exercise1/build/
+/exercises/ch06/exercise1/dist/
