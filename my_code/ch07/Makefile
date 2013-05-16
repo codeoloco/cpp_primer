@@ -1,11 +1,14 @@
 CPP=clang++
 CFLAGS=-Wall -g
 CPP11=-std=c++11 -stdlib=libc++
-PROGS=calling protos twoarg lotto arrfun1 arrfun2 arrfun3 arrfun4 strgfun
+PROGS=calling protos twoarg lotto arrfun1 arrfun2 arrfun3 arrfun4 \
+	strgfun strgback travel strctfun strctptr topfive arrobj
 MACDIRS=calling.dSYM protos.dSYM twoarg.dSYM lotto.dSYM arrfun1.dSYM \
-	arrfun2.dSYM arrfun3.dSYM arrfun4.dSYM strgfun.dSYM
+	arrfun2.dSYM arrfun3.dSYM arrfun4.dSYM strgfun.dSYM strgback.dSYM \
+	travel.dSYM strctfun.dSYM strctptr.dSYM topfive.dSYM arrobj.dSYM
 WINFILES=calling.exe protos.exe twoarg.exe lotto.exe arrfun1.exe arrfun2.exe \
-	arrfun3.exe arrfun4.exe strgfun.exe
+	arrfun3.exe arrfun4.exe strgfun.exe strgback.exe travel.exe strctdun.exe \
+	strctptr.exe topfive.exe arrobj.exe
 
 calling : calling.cpp
 	$(CPP) $(CFLAGS) $(CPP11) calling.cpp -o calling
@@ -33,6 +36,24 @@ arrfun4 : arrfun4.cpp
 
 strgfun : strgfun.cpp
 	$(CPP) $(CFLAGS) $(CPP11) strgfun.cpp -o strgfun
+
+strgback : strgback.cpp
+	$(CPP) $(CFLAGS) $(CPP11) strgback.cpp -o strgback
+
+travel : travel.cpp
+	$(CPP) $(CFLAGS) $(CPP11) travel.cpp -o travel
+
+strctfun : strctfun.cpp
+	$(CPP) $(CFLAGS) $(CPP11) strctfun.cpp -o strctfun
+
+strctptr : strctptr.cpp
+	$(CPP) $(CFLAGS) $(CPP11) strctptr.cpp -o strctptr
+
+topfive : topfive.cpp
+	$(CPP) $(CFLAGS) $(CPP11) topfive.cpp -o topfive
+
+arrobj : arrobj.cpp
+	$(CPP) $(CFLAGS) $(CPP11) arrobj.cpp -o arrobj
 
 all : $(PROGS)
 
