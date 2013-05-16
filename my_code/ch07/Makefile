@@ -2,13 +2,16 @@ CPP=clang++
 CFLAGS=-Wall -g
 CPP11=-std=c++11 -stdlib=libc++
 PROGS=calling protos twoarg lotto arrfun1 arrfun2 arrfun3 arrfun4 \
-	strgfun strgback travel strctfun strctptr topfive arrobj
+	strgfun strgback travel strctfun strctptr topfive arrobj recur ruler \
+	fun_ptr arfupt
 MACDIRS=calling.dSYM protos.dSYM twoarg.dSYM lotto.dSYM arrfun1.dSYM \
 	arrfun2.dSYM arrfun3.dSYM arrfun4.dSYM strgfun.dSYM strgback.dSYM \
-	travel.dSYM strctfun.dSYM strctptr.dSYM topfive.dSYM arrobj.dSYM
+	travel.dSYM strctfun.dSYM strctptr.dSYM topfive.dSYM arrobj.dSYM \
+	recur.dSYM ruler.dSYM fun_ptr.dSYM arfupt.dSYM
 WINFILES=calling.exe protos.exe twoarg.exe lotto.exe arrfun1.exe arrfun2.exe \
 	arrfun3.exe arrfun4.exe strgfun.exe strgback.exe travel.exe strctdun.exe \
-	strctptr.exe topfive.exe arrobj.exe
+	strctptr.exe topfive.exe arrobj.exe recur.exe ruler.exe fun_ptr.exe \
+	arfupt.exe
 
 calling : calling.cpp
 	$(CPP) $(CFLAGS) $(CPP11) calling.cpp -o calling
@@ -54,6 +57,18 @@ topfive : topfive.cpp
 
 arrobj : arrobj.cpp
 	$(CPP) $(CFLAGS) $(CPP11) arrobj.cpp -o arrobj
+
+recur : recur.cpp
+	$(CPP) $(CFLAGS) $(CPP11) recur.cpp -o recur
+
+ruler : ruler.cpp
+	$(CPP) $(CFLAGS) $(CPP11) ruler.cpp -o ruler
+
+fun_ptr : fun_ptr.cpp
+	$(CPP) $(CFLAGS) $(CPP11) fun_ptr.cpp -o fun_ptr
+
+arfupt : arfupt.cpp
+	$(CPP) $(CFLAGS) $(CPP11) arfupt.cpp -o arfupt
 
 all : $(PROGS)
 
